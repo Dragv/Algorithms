@@ -58,10 +58,18 @@ public:
     if (indexCheck(index)){
       throw invalid_argument("Index out of bound");
     }
+    Node<T>* temp = this->firstNode;
+    for (int i = 0; i < index; i++){
+      temp = temp->getNext;
+    }
+    return temp->getElement;
   }
 
   int indexOf(T element){
-
+    Node<T>* temp = this->firstNode;
+    for (int i = 0; i < this->size; i++){
+      
+    }
   }
 
   T remove(int index){
